@@ -50,7 +50,7 @@ int main(void)
     {
         // print the array values using array syntax
         printf("array[%d] : %d\t", i, array[i]);
-        
+         
         // print values contained in each memory address starting at memblock 
         printf("*(memblock + %d) : %d\t", i, *(memblock+i));
         

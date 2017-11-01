@@ -2,13 +2,14 @@
 #include <stdlib.h>
 #include "arrays.h"
 
-void set_arrays(int array_size, int array[array_size], long double &memblock, int i);
-void print_arrays(int array_size, int array[array_size], long double &memblock,const char *foo, int i);
+void set_arrays(int array_size, int array[array_size], long double *memblock);
+void print_arrays(int array_size, int array[array_size], long double *memblock,const char *foo);
 
 
-void set_arrays(int array_size, int array[array_size], long double &memblock, int i) 
+void set_arrays(int array_size, int array[array_size], long double *memblock) 
 {
        /* Fill declared arrays with integers */
+    int i;
     for (i=0; i < array_size; i++)
     {
         // assign the value i to the ith element 
@@ -21,8 +22,9 @@ void set_arrays(int array_size, int array[array_size], long double &memblock, in
 
 }
 
-void print_arrays(int array_size, int array[array_size], long double &memblock,const char *foo, int i)
+void print_arrays(int array_size, int array[array_size], long double *memblock,const char *foo)
 {
+        int i;
         for (i=0; i < (array_size + 3); i++)
     {
         // print the array values using array syntax
@@ -41,8 +43,6 @@ void print_arrays(int array_size, int array[array_size], long double &memblock,c
 
 int main(void)
 {
-    int i; // Iteration index
-    
     /* Array syntax for defining an array */
     int array_size = 10;
     int array[array_size];
@@ -69,8 +69,8 @@ int main(void)
     // constant character array (i.e., a string)
     const char *foo = "Foo bar .";
     
-    set_arrays(array_size,array,&memblock, i);
-    print_arrays(array_size,array,&memblock,&foo, i);
+    set_arrays(array_size,array,memblock);
+    print_arrays(array_size,array,memblock, foo);
 
     // explicitly free the block of memory malloc-ed at memblock 
     free(memblock);

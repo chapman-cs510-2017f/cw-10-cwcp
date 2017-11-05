@@ -1,8 +1,8 @@
 # CS510 CW 10
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Chris Watkins and Chelsea Parlett-Pelleriti**
 
-[![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-10-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-10-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-10-cwcp)](https://travis-ci.org/chapman-cs510-2017f/cw-10-cwcp)
 
 ## Specification
 
@@ -40,7 +40,7 @@ Complete the following exercises, saving your solutions in the indicated files.
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+**This was useful to help us understand how C is working on a hardware level. C is still a tough language, especially when you accidentially miss something small, because error messages don't always make sense. I think the more we use it, the better  we'll be at correcting our errors.**
 
 ## Honor Pledge
 
@@ -51,4 +51,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+**Chris Watkins and Chelsea Parlett-Pelleriti**

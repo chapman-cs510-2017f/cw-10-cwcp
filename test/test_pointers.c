@@ -43,10 +43,19 @@ static char * test_pass_by_value() {
     return 0;
 }
 
+static char * test_pass_by_reference(){
+    COMP x = 0, y = 0;
+    VEC2 v = {x,y};
+    setVec2(&v, 1.0, 5.0);
+    mu_assert("error, v->x != 15.0", is_equal(v.x, 1.0));
+    mu_assert("error, v->y != 0.0", is_equal(v.y, 5.0));
+}
+
 /* all_tests collects a set of tests defined above, and runs them
  */
 static char * all_tests() {
     mu_run_test(test_pass_by_value);
+    mu_run_test(test_pass_by_reference);
     return 0;
 }
 

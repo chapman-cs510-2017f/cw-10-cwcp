@@ -49,6 +49,7 @@ static char * test_pass_by_reference(){
     setVec2(&v, 1.0, 5.0);
     mu_assert("error, v->x != 15.0", is_equal(v.x, 1.0));
     mu_assert("error, v->y != 0.0", is_equal(v.y, 5.0));
+    return  0;
 }
 
 /* all_tests collects a set of tests defined above, and runs them
